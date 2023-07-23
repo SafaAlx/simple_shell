@@ -39,8 +39,8 @@ int string_split(int argc, char **argv, char *args, char **_path, char **evp)
 				argx = strtok(NULL, delimeter);
 				j++; }
 			options[j] = NULL;
-			if (stricmp(options[0], "env") == 0 && options[1] == NULL)
-				printenv(ev);
+			if (stringcmp(options[0], "env") == 0 && options[1] == NULL)
+				env_print(evp);
 			else if (options[0] != NULL && stringlen(options[0]) > 0)
 				status_pid =  chd_launch(options, args, _path);
 			free(args);
@@ -49,7 +49,7 @@ int string_split(int argc, char **argv, char *args, char **_path, char **evp)
 	}
 	else if (argc >= 2)
 	{
-		args_pop(argv);
+		next_args(argv);
 		status_pid =  chd_launch(argv, NULL, _path);
 	}
 	return (status_pid);
