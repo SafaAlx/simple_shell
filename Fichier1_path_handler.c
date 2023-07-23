@@ -16,7 +16,7 @@ char *get_path(char **envp)
 	while (*envp != NULL)
 	{
 		tmp = strtok(*envp, "=");
-		if (stricmp(tmp, "PATH") == 0)
+		if (stringcmp(tmp, "PATH") == 0)
 		{
 			tmp = strtok(NULL, "\0");
 			return (tmp);
@@ -53,10 +53,10 @@ char **path_params(char *path)
 }
 
 /**
- * getline - get line from the command
+ * get_line - get line from the command
  * Return: buffer
  */
-char *getline(void)
+char *get_line(void)
 {
 	char *buf = NULL;
 	int Test;
