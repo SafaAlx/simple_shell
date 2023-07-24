@@ -17,11 +17,11 @@ int main(int argc, char **argv, char **env)
 	char *_ARGS_PATH[] = {"/bin/", "/sbin/",
 		"/usr/local/sbin/", "/usr/local/bin/",
 		"/usr/sbin/", "/usr/bin/", "/snap/bin/", NULL};
+	place("$ ");
 	signal(SIGINT, int_handler);
 	_isatty = isatty(0);
 	while (1)
 	{
-		place("$ ");
 		if (argc == 1)
 		{
 			line = malloc(sizeof(char) * SIZEBUFFER + 1);
