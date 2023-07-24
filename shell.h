@@ -16,18 +16,18 @@
 
 
 /*---------------------Safa's functions--------------------*/
-void int_handler(int i);
+void int_handler(int i __attribute__((unused)));
 void prompt_func(void);
-int listen_read(char *);
-int chd_launch(char *, char *, char *);
+int listen_read(char *buffer);
+int chd_launch(char **_argv, char *args, char **_path);
 void errors(void);
-int next_args(char **);
+int next_args(char **p);
 int update_cmd(char *, char *);
 int _main(int argc, char **argv, char **env);
 /*---------------------Salma's functions--------------------*/
 char *get_path(char **envp);
 char **path_params(char *path);
-char *getline(void);
+char *get_line(void);
 int stringcmp(char *str1, char *str2);
 char *stringcat(char *destination, char *source);
 long int stringlen(char *p);
