@@ -18,8 +18,13 @@
 /*---------------------Safa's functions--------------------*/
 void int_handler(int i __attribute__((unused)));
 void prompt_func(void);
+<<<<<<< HEAD
 int listen_read(char *buffer);
 int chd_launch(char **_argv, char *args, char **_path);
+=======
+int listen_read(char *);
+int chd_launch(char **, char *, char **);
+>>>>>>> a4bc772854b536c479b7778f7de42d54ef51623c
 void errors(void);
 int next_args(char **p);
 int update_cmd(char *, char *);
