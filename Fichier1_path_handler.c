@@ -53,10 +53,10 @@ char **path_params(char *path)
 }
 
 /**
- * get_line - get line from the command
+ * getline - get line from the command
  * Return: buffer
  */
-char *get_line(void)
+char *getline(void)
 {
 	char *buf = NULL;
 	int Test;

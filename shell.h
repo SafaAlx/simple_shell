@@ -27,7 +27,7 @@ int _main(int argc, char **argv, char **env);
 /*---------------------Salma's functions--------------------*/
 char *get_path(char **envp);
 char **path_params(char *path);
-char *get_line(void);
+char *getline(void);
 int stringcmp(char *str1, char *str2);
 char *stringcat(char *destination, char *source);
 long int stringlen(char *p);
@@ -36,6 +36,11 @@ char *stringconcat(char *str1, char *str2);
 char *get_env_value(char **envp, char *var);
 int env_print(char **env);
 int append(char *cmd);
+void buffers1(char *line, char **command);
+void buffers2(char **dir, char *combine);
+void buffers3(char **tokens, char *buf);
+void buffers4(char **tok, char *buf2);
+void buffers5(char *dup);
 
 
 #endif
