@@ -19,7 +19,7 @@
 void int_handler(int i);
 void prompt_func(void);
 int listen_read(char *);
-int chd_launch(char *, char *, char *);
+int chd_launch(char **, char **, char *);
 void errors(void);
 int next_args(char **);
 int update_cmd(char *, char *);
