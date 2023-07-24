@@ -17,7 +17,6 @@ int main(int argc, char **argv, char **env)
 	char *_ARGS_PATH[] = {"/bin/", "/sbin/",
 		"/usr/local/sbin/", "/usr/local/bin/",
 		"/usr/sbin/", "/usr/bin/", "/snap/bin/", NULL};
-	place("$ ");
 	signal(SIGINT, int_handler);
 	_isatty = isatty(0);
 	while (1)
@@ -57,19 +56,4 @@ void prompt_func(void)
 	/*putchar(62);
 	symbol space
 	putchar(32);*/
-}
-
-/**
- * place - similar to puts in C
- * @str: a pointer the integer we want to set to 402
- *
- * Return: int
- */
-void place(char *str)
-{
-	while (*str != '\0')
-	{
-		charput(*str);
-		str++;
-	}
 }
