@@ -56,7 +56,7 @@ char **path_params(char *path)
  * getline - get line from the command
  * Return: buffer
  */
-char *getline(void)
+char *get_line(void)
 {
 	char *buf = NULL;
 	int Test;
