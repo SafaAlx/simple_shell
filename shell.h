@@ -29,7 +29,6 @@ int _main(int argc, char **argv, char **env);
 /*---------------------Salma's functions--------------------*/
 char *get_path(char **envp);
 char **path_params(char *path);
-char *get_line(void);
 int stringcmp(char *str1, char *str2);
 char *stringcat(char *destination, char *source);
 long int stringlen(char *p);

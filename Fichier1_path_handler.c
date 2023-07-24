@@ -51,29 +51,3 @@ char **path_params(char *path)
 	}
 	return (parameters);
 }
-
-/**
- * getline - get line from the command
- * Return: buffer
- */
-char *get_line(void)
-{
-	char *buf = NULL;
-	int Test;
-	size_t buf_size = 0;
-
-
-	Test = getline(&buf, &buf_size, stdin);
-	buffers3(NULL, buf);
-
-	if (Test == EOF)
-	{
-		buffers1(NULL, NULL);
-		buffers2(NULL, NULL);
-		buffers3(NULL, NULL);
-		buffers4(NULL, NULL);
-		buffers5(NULL);
-		_exit(0);
-	}
-	return (buf);
-}

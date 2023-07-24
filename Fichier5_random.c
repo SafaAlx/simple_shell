@@ -21,7 +21,7 @@ int listen_read(char *buffer)
 	size_t bufsize = SIZEBUFFER;
 	ssize_t c;
 
-	c = get_line(&buffer, &bufsize, stdin);
+	c = getline(&buffer, &bufsize, stdin);
 	if (c == EOF)
 		return (-1);
 	else if (stringcmp(buffer, "exit") == 10)
