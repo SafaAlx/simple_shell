@@ -26,6 +26,8 @@ void errors(void);
 int next_args(char **p);
 int update_cmd(char *, char *);
 int main(int argc, char **argv, char **env);
+void place(char *str);
+int charput(char c);
 /*---------------------Salma's functions--------------------*/
 char *get_path(char **envp);
 char **path_params(char *path);

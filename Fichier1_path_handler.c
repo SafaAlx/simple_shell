@@ -51,3 +51,14 @@ char **path_params(char *path)
 	}
 	return (parameters);
 }
+
+/**
+ * charput - writes the character like putchar
+ * @c: The character to print
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int charput(char c)
+{
+	return (write(1, &c, 1));
+}
