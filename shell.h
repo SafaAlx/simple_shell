@@ -25,7 +25,7 @@ int chd_launch(char **, char *, char **);
 void errors(void);
 int next_args(char **p);
 int update_cmd(char *, char *);
-int _main(int argc, char **argv, char **env);
+int main(int argc, char **argv, char **env);
 /*---------------------Salma's functions--------------------*/
 char *get_path(char **envp);
 char **path_params(char *path);

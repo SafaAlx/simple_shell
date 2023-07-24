@@ -8,7 +8,7 @@
  * @env: environment var
  * Return: 1.
  */
-int _main(int argc, char **argv, char **env)
+int main(int argc, char **argv, char **env)
 {
 	char *line;
 	int _isatty;
@@ -52,8 +52,8 @@ int _main(int argc, char **argv, char **env)
  */
 void prompt_func(void)
 {
-	/** symbol > */
-	/*putchar(62);*/
-	/** symbol space */
-	/*putchar(32);*/
+	/*symbol >;*/
+	/*putchar(62);
+	symbol space
+	putchar(32);*/
 }
