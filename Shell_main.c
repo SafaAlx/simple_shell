@@ -18,6 +18,7 @@ int main(int argc, char **argv, char **env)
 		"/usr/local/sbin/", "/usr/local/bin/",
 		"/usr/sbin/", "/usr/bin/", "/snap/bin/", NULL};
 	signal(SIGINT, int_handler);
+	prompt_func();
 	_isatty = isatty(0);
 	while (1)
 	{
@@ -52,8 +53,6 @@ int main(int argc, char **argv, char **env)
  */
 void prompt_func(void)
 {
-	/*symbol >;*/
-	/*putchar(62);
-	symbol space
-	putchar(32);*/
+	if (isatty(STDIN_FILENO))
+		write(STDOUT_FILENO, "$ ", 13);
 }
