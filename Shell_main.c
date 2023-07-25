@@ -2,12 +2,16 @@
 #include <signal.h>
 
 /**
- * _main - Entry to launch program
+ * main - Entry point
+ *
+ * Description: 'Launch the shell'
  * @argc: argument counter
  * @argv: arguments
  * @env: environment var
+ *
  * Return: 1.
  */
+
 int main(int argc, char **argv, char **env)
 {
 	char *line;
