@@ -8,7 +8,7 @@
  * @env: environment var
  * Return: 1.
  */
-int main(int argc, char **argv, char **env)
+int _main(int argc, char **argv, char **env)
 {
 	char *line;
 	int _isatty;
