@@ -1,4 +1,0 @@
-This file lists all individuals having contributed content to the repository.
-
-Safa Mimoune <safae.mimoune@gmail.com>
-Salma Elhila <elhilasalma@gmail.com>
