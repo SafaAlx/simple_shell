@@ -2,9 +2,7 @@
 #include <signal.h>
 
 /**
- * main - Entry point
- *
- * Description: 'Launch the shell'
+ * main - Entry to launch program
  * @argc: argument counter
  * @argv: arguments
  * @env: environment var
