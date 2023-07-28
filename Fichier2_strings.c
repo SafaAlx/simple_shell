@@ -27,7 +27,7 @@ int stringcmp(char *str1, char *str2)
  * @destination: string destination
  * @source: string source
  *
- * Return: Destination - a string
+ * Return: Always 0
  */
 char *stringcat(char *destination, char *source)
 {
